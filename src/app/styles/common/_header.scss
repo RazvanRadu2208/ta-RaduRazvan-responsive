@@ -32,6 +32,19 @@
     ul {
       display: flex;
       gap: 16px;
+      align-items: center;
+      font-weight: 300;
+
+      i[class*='fa-'] {
+        margin-right: 16px;
+        color: $brand-primary;
+        font-size: 24px;
+      }
+
+      li:last-child {
+        font-size: 17px;
+        margin-top: 3px;
+      }
     }
   }
 
@@ -44,6 +57,18 @@
     ul {
       i[class*='fa-'] {
         font-size: 24px;
+      }
+
+      .cart-quantity {
+        height: 16px;
+        padding: 0 4px;
+        background: $brand-primary;
+        border-radius: 30px;
+        position: absolute;
+        top: -6px;
+        right: -6px;
+        color: $white;
+        font-size: 12px;
       }
     }
   }
@@ -79,6 +104,30 @@
         font-size: 20px;
         text-transform: uppercase;
         border-radius: 24px;
+        transition: color 0.2s linear, background-color 0.4s ease-in-out;
+
+        &:hover {
+          background: $brand-primary;
+          color: $white;
+        }
+      }
+    }
+
+    .nav-secondary {
+      ul {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+      }
+
+      a {
+        display: block;
+        padding: 3px 6px;
+        font-weight: 300;
+        line-height: 18px;
+        font-size: 16px;
+        border-radius: 24px;
+        text-transform: uppercase;
         transition: color 0.2s linear, background-color 0.4s ease-in-out;
 
         &:hover {
